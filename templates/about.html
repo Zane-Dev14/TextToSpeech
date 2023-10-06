@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <link type= "text/css" href="{{ url_for('static',filename='dunno/aos.css') }}" rel="stylesheet">
+    <link type= "text/css" href="{{ url_for('static',filename='dunno/bootstrap.min.css') }}" rel="stylesheet">
+    <link type= "text/css" href="{{ url_for('static',filename='dunno/glightbox.min.css') }}" rel="stylesheet">
+  
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <noscript><link rel="stylesheet" href="{{ url_for('static',filename='styles/noscript.css') }}" /></noscript>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+</head>
+<body>
+
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>VoicePlay</span>
+          </a>
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="home">Home</a></li>
+              <li><a class="nav-link scrollto" href="about">About</a></li>
+              <li><a class="nav-link scrollto" href="voice">Change Voice</a></li>
+              <li><a class="nav-link scrollto" href="values">Change Rate & Volume</a></li>
+              <li><a class="nav-link scrollto" href="texting">Use the service</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+        </div>
+      </header>
+    <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+        <div class="content">
+            <h1>About Page</h1>
+            <p class="major">This is for more info on the VoicePlay webapp </p>
+            <ul class="actions stacked">
+                <li>Text-to-speech (TTS) is a type of technology that reads digital text aloud.</li><li>It's sometimes called “read aloud” technology. </li>
+                    <li>With a click of a button, it can take
+                    words on a computer and convert them into audio.</li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="static/pic01.jpg" alt="" />
+        </div>
+    </section>
+    <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+        <div class="content">
+            <h2>What we plan</h2>
+           <ul class="actions stacked">
+                <li>We aim to make a web interface where users can use a simple TTS
+                    service.</li>
+                <li>It will consist of many options, to select a specific voice type, an accent
+                    type, language, gender etc.</li>
+
+                <li>It will be a multi page web interface, linked with buttons, using Javascript,
+and designed with CSS.</li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="static/spotlight01.jpg" alt="" />
+        </div>
+    </section>
+  
+</body>
+</html>

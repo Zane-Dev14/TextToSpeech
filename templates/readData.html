@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Old Records</title>
+    <style>
+body {
+  justify-content: center;
+  overflow: hidden;
+  color: #455A64;
+  background-color: #1fddff;
+  font-family: var(--fontFamily);
+  font-size: var(--fontSizeMd);
+  line-height: var(--lineHeightMd);
+}
+
+label{
+      display: block;
+      margin-top: 30px;
+      font-size: 16px;
+      font-weight: 500;
+  }
+  input{
+      display: block;
+      height: 50px;
+      width: 100%;
+      background-color: rgba(255,255,255,0.07);
+      border-radius: 3px;
+      padding: 0 10px;
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 300;
+  }
+  ::placeholder{
+      color: #e5e5e5;
+  }
+  button{
+      margin-top: 50px;
+      width: 10%;
+      background-color: #ffffff;
+      color: #080710;
+      padding: 15px 0;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+    
+    </style>
+</head>
+<body>
+
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>VoicePlay</span>
+          </a>
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="home">Home</a></li>
+              <li><a class="nav-link scrollto" href="about">About</a></li>
+              <li><a class="nav-link scrollto" href="voice">Change Voice</a></li>
+              <li><a class="nav-link scrollto" href="values">Change Rate & Volume</a></li>
+              <li><a class="nav-link scrollto" href="texting">Use the service</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+        </div>
+      </header>
+    <h1>Read the last 5 lines inputted</h1>
+        <div>   
+            {% for i in DataSent %}
+                {{i}}    <br>
+            {% endfor %}
+        </div>
+    <div>
+        <form align="center" action="{{ url_for('fetchdata') }}" method="post">
+           <h1> <label for="Delete">Enter Record To Be Deleted: [1 to 5]</label>
+           </h1><input type="text" id="Deletes" name="deleteNumber"></input>
+            <input name ="button"type="submit"></input>
+        </form>
+    </div>
+    </body>
+
+</html>

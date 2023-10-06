@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link type= "text/css" href="{{ url_for('static',filename='dunno/aos.css') }}" rel="stylesheet">
+    <link type= "text/css" href="{{ url_for('static',filename='dunno/bootstrap.min.css') }}" rel="stylesheet">
+    <link type= "text/css" href="{{ url_for('static',filename='dunno/glightbox.min.css') }}" rel="stylesheet">
+  
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>@import "compass/css3";
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+        body {
+            background-color: #eee;
+            min-height: 100%;
+            color: #fff;
+            background-image: url('http://isaacsuttell.com/img/justine.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Raleway, sans-serif;
+       }
+        #title {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+            letter-spacing: 0.1em;
+            z-index: 100;
+            color: #fff;
+       }
+        
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>VoicePlay</span>
+          </a>
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="home">Home</a></li>
+              <li><a class="nav-link scrollto" href="about">About</a></li>
+              <li><a class="nav-link scrollto" href="voice">Change Voice</a></li>
+              <li><a class="nav-link scrollto" href="values">Change Rate & Volume</a></li>
+              <li><a class="nav-link scrollto" href="texting">Use the service</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+        </div>
+      </header>
+     
+      <section id="hero" class="hero d-flex align-items-center">
+
+        <div class="container">
+            <div class="row">
+              
+                <h1 >Convert Your Texts To Speeches!
+              </h1>
+                <h2>Choose From Multiple Voices, Multiple Options such as Rate and Volume!</h2>
+             
+            </div>
+          </div>
+    
+      </section>
+      
+
+</body>
+</html>
